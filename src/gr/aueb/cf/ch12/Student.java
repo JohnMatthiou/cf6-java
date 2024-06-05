@@ -45,7 +45,7 @@ public class Student {
         this.firstname = firstname;
     }
 
-    public String getFistname() {
+    public String getFirstname() {
         return firstname;
     }
 

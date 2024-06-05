@@ -19,7 +19,7 @@ public class StudentMain {
         alice.setLastname("Wonderland");
 
         System.out.println("Id: " + alice.getId());
-        System.out.println("Firstname: " + alice.getFistname());
+        System.out.println("Firstname: " + alice.getFirstname());
         System.out.println("Lastname: " + alice.getLastname());
 
 
