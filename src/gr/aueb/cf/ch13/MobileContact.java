@@ -67,6 +67,7 @@ public class MobileContact {
         }
 
         pivot++;
+        contacts[pivot] = new MobileContact();
         contacts[pivot].setFirstname(firstname);
         contacts[pivot].setLastname(lastname);
         contacts[pivot].setPhoneNumber(phoneNumber);

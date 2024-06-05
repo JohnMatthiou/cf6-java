@@ -139,7 +139,7 @@ public class Account {
      * Return the  {@link Account} state in {@link String} format
      *
      * @return
-     *      the String-representasion of the state of the {@link Account}
+     *      the String-representation of the state of the {@link Account}
      */
     public String accountToString() {
         return "(" + id + ", " + iban + ", " + firstname + ", " + lastname
