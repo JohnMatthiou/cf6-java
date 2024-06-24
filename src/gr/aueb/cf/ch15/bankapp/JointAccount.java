@@ -37,15 +37,15 @@ public class JointAccount extends Account {
 
     @Override
     protected boolean isSsnValid(String ssn) {
-        boolean areOthersVaid = false;
+        boolean areOthersValid = false;
 
         for (User user : otherHolders) {
             if (user.getSsn().equals(ssn)) {
-                areOthersVaid = true;
+                areOthersValid = true;
                 break;
             }
         }
-        return super.isSsnValid(ssn) || areOthersVaid;
+        return super.isSsnValid(ssn) || areOthersValid;
     }
 
     @Override

@@ -1,6 +1,6 @@
 package gr.aueb.cf.ch15.bankapp;
 
-public class User {
+public class User extends IdentifiableEntity {
     private String firstname;
     private String lastname;
     private String ssn;

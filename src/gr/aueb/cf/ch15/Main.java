@@ -13,6 +13,10 @@ public class Main {
         doMovePlus10(p1);
         doMovePlus10(p2);
         doMovePlus10(p3);
+
+        System.out.println(p1.convertToString());
+        System.out.println(p2.convertToString());
+        System.out.println(p3.convertToString());
     }
 
     public static void doMovePlus10(Point point) {

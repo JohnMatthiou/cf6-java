@@ -22,7 +22,7 @@ public class OverdraftJointAccount extends OverdraftAccount {
         //return otherHolders;
         User[] otherHolders = new User[this.otherHolders.length];
         for (int i = 0; i < otherHolders.length; i++) {
-            otherHolders[i] = new User(this.otherHolders[i]);;
+            otherHolders[i] = new User(this.otherHolders[i]);
         }
         return otherHolders;
     }
@@ -31,21 +31,21 @@ public class OverdraftJointAccount extends OverdraftAccount {
         //this.otherHolders = otherHolders;
         this.otherHolders = new User[otherHolders.length];
         for (int i = 0; i < otherHolders.length; i++) {
-            this.otherHolders[i] = new User(otherHolders[i]);;
+            this.otherHolders[i] = new User(otherHolders[i]);
         }
     }
 
     @Override
     protected boolean isSsnValid(String ssn) {
-        boolean areOthersVaid = false;
+        boolean areOthersValid = false;
 
         for (User user : otherHolders) {
             if (user.getSsn().equals(ssn)) {
-                areOthersVaid = true;
+                areOthersValid = true;
                 break;
             }
         }
-        return super.isSsnValid(ssn) || areOthersVaid;
+        return super.isSsnValid(ssn) || areOthersValid;
     }
 
     @Override
@@ -54,7 +54,7 @@ public class OverdraftJointAccount extends OverdraftAccount {
                 ", uuid=" + getUuid() +
                 ", holder=" + getHolder() +
                 "otherHolders=" + Arrays.toString(otherHolders) +
-                ", blance=" + getBalance() +
+                ", balance=" + getBalance() +
                 '}';
     }
 }
