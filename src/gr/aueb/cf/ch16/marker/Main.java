@@ -21,7 +21,7 @@ public class Main {
         } else if (item instanceof CompactDisk) {
             System.out.println("CD delivered.");
         } else {
-            throw new RuntimeException("Can not get delivered.")
+            throw new RuntimeException("Can not get delivered.");
         }
     }
 }
